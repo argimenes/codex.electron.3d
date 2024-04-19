@@ -4,8 +4,11 @@
   "description": "Codex rebuilt in Electron, TypeScript, SurrealDB, and threeJS",
   "main": "./src/main/main.js",
   "scripts": {
-    "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "build:electron": "vite build && electron .",
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
@@ -19,6 +22,17 @@
   },
   "homepage": "https://github.com/argimenes/codex.electron.3d#readme",
   "devDependencies": {
-    "electron": "^30.0.1"
+    "electron": "^30.0.1",
+    "solid-js": "^1.8.16",
+    "vite": "^4.4.6"
+  },
+  "dependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/preset-env": "^7.24.4",
+    "@babel/preset-typescript": "^7.24.1",
+    "solid-refresh": "^0.7.5",
+    "solid-start": "^0.3.11",
+    "typescript": "^5.4.5",
+    "vite-plugin-solid": "^2.10.2"
   }
 }

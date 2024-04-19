@@ -13,7 +13,7 @@ function createWindow() {
   });
 
   // Load the index.html file from the renderer directory
-  win.loadFile(path.join(root, 'src', 'renderer', 'index.html'));
+  win.loadFile(path.join(root, 'src', 'renderer', 'dist', 'index.html'));
 }
 
 app.whenReady().then(createWindow);
