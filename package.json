@@ -1,0 +1,24 @@
+{
+  "name": "codex.electron.3d",
+  "version": "1.0.0",
+  "description": "Codex rebuilt in Electron, TypeScript, SurrealDB, and threeJS",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/argimenes/codex.electron.3d.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/argimenes/codex.electron.3d/issues"
+  },
+  "homepage": "https://github.com/argimenes/codex.electron.3d#readme",
+  "devDependencies": {
+    "electron": "^30.0.1"
+  }
+}
