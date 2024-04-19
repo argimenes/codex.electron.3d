@@ -1,5 +1,7 @@
 // main.js
 const { app, BrowserWindow } = require('electron');
+const path = require('path');
+const root = path.resolve(__dirname, '..', '..');
 
 function createWindow() {
   const win = new BrowserWindow({
@@ -10,8 +12,8 @@ function createWindow() {
     }
   });
 
-  // Load your HTML file
-  win.loadFile('index.html');
+  // Load the index.html file from the renderer directory
+  win.loadFile(path.join(root, 'src', 'renderer', 'index.html'));
 }
 
 app.whenReady().then(createWindow);
